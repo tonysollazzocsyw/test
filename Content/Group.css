@@ -1,4 +1,7 @@
 ﻿body {
+    background-color: #fcfcfc;
+    color: #24292e;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .panel-default {
@@ -26,7 +29,7 @@
     border-top-width: 1px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     box-sizing: border-box;
-    color: rgb(51, 51, 51);
+    /*color: rgb(51, 51, 51);*/
     display: block;
     /*font-family: "Open Sans";*/
     /*font-size: 14px;*/
@@ -49,8 +52,9 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     box-sizing: border-box;
-    color: rgb(51, 51, 51);
+    /*color: rgb(51, 51, 51);*/
     display: block;
+    font-weight:200;
     /*font-family: "Open Sans";*/
     /*font-size: 14px;*/
     /*height: 101px;*/
@@ -66,7 +70,7 @@
 
 .panel-body {
     box-sizing: border-box;
-    color: rgb(51, 51, 51);
+    /*color: rgb(51, 51, 51);*/
     display: block;
     /*font-family: "Open Sans";*/
     /*font-size: 14px;*/
