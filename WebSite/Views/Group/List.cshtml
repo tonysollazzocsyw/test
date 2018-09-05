@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+    var groupsToDisplay = ViewBag.groupsToDisplay;
+    var id = ViewContext.RouteData.Values["id"];
+    //var domain = "doc";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>List ActiveDirectory Groups</title>
+    @Styles.Render("~/Content/Group.css")
+    <script language="javascript">
+        function showHideBeforeSubmit() {
+            if (document.getElementById("divResults")) { document.getElementById("divResults").style.display = "none" };
+            document.getElementById("divProcessing").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="panel panel-default">
+        <div class="panel-heading">List ActiveDirectory Groups</div>
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+                @Html.Label("userid: ")
+                @Html.TextBox("id", id)
+                @*@Html.Label(" and domain (optional):")
+                @Html.TextBox("domain",domain)*@
+                @Html.Raw("<input type='submit' onClick='showHideBeforeSubmit();submit;' value='Search'")
+            }
+        </div>
+    </div>
+
+    <div id="divProcessing" style="display: none;">
+        <p>Processing, please wait . . . <img src="~/Content/loading.gif"></p>
+    </div>
+
+    @if(groupsToDisplay.ToArray().Length > 0 && groupsToDisplay.ToArray()[0] != "")
+    {
+        <div id="divResults" class="panel panel-default">
+            <div class="panel-heading">Groups</div>
+            <div class="panel-body">
+                @foreach (string group in groupsToDisplay)
+                {
+                    @group<br />
+                }
+            </div>
+        </div>
+    }
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Please note:</div>
+        <div class="panel-body">
+            <ul>
+                <li>This infomation is provided "as-is" and this tool is not an officially supported product.</li>
+                <li>The group list for a {userid} can be generated automatically: @Request.Url.GetLeftPart(UriPartial.Authority)/Group/List/{userid}</li>
+                <li>The group list is also available as a web API. For more details see @Request.Url.GetLeftPart(UriPartial.Authority)/swagger/ui/index#!/Person/Person_Get or @Request.Url.GetLeftPart(UriPartial.Authority)/Help/Api/GET-api-Person_samaccountname_container</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

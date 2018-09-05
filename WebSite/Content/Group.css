@@ -1,0 +1,82 @@
+﻿body {
+}
+
+.panel-default {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(221, 221, 221);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(221, 221, 221);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(221, 221, 221);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    /*font-family: "Open Sans";*/
+    /*font-size: 14px;*/
+    /*height: 943px;*/
+    /*line-height: 20px;*/
+    margin-bottom: 20px;
+    /*text-size-adjust: 100%;*/
+    /*width: 103px;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.panel-heading {
+    background-color: rgb(245, 245, 245);
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(221, 221, 221);
+    border-right-color: rgb(221, 221, 221);
+    border-top-color: rgb(221, 221, 221);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    /*font-family: "Open Sans";*/
+    /*font-size: 14px;*/
+    /*height: 101px;*/
+    /*line-height: 20px;*/
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    /*text-size-adjust: 100%;*/
+    /*width: 101px;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.panel-body {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    /*font-family: "Open Sans";*/
+    /*font-size: 14px;*/
+    /*height: 840px;*/
+    /*line-height: 20px;*/
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    /*text-size-adjust: 100%;*/
+    /*width: 101px;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
